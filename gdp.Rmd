@@ -11,7 +11,7 @@ library(viridis)
 ```
 
 ### 8 Aug 2020 (data from before 2020)
-
+[Link to GeoJSON data](https://raw.githubusercontent.com/datasets/geo-boundaries-world-110m/master/countries.geojson)
 
 ```{r test2, echo=FALSE}
 countries <- geojsonio::geojson_read("countries.geojson", what="sp")
