@@ -1,0 +1,16 @@
+---
+title: "Leaflet"
+subtitle: August 11, 2020
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(leaflet)
+```
+```{r leaf}
+m <- leaflet() %>% 
+    addTiles() %>%
+    addMarkers(lat=50.0373566, lng=8.2374113, popup="Wilhelm Heckel GmbH")
+m
+```
